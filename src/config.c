@@ -145,6 +145,7 @@ configYesNo configs_yesno[] = {
     {"replica-read-only","slave-read-only",&server.repl_slave_ro,1,CONFIG_DEFAULT_SLAVE_READ_ONLY},
     {"replica-ignore-maxmemory","slave-ignore-maxmemory",&server.repl_slave_ignore_maxmemory,1,CONFIG_DEFAULT_SLAVE_IGNORE_MAXMEMORY},
     {"jemalloc-bg-thread",NULL,&server.jemalloc_bg_thread,1,1},
+    {"cluster-allow-reads-when-down",NULL,&server.cluster_allow_reads_when_down,1,CLUSTER_DEFAULT_ALLOW_READS_WHEN_DOWN},
     {NULL, NULL, 0, 0}
 };
 
